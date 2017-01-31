@@ -5,8 +5,6 @@ export function loadCoursesSuccess (courses) {
     return { type : types.LOAD_COURSES_SUCCESS, courses};
 }
 
-
-
 export function loadCourses() {
     return function(dispatch) {
         return courseApi.getAllCourses().then(courses => {
@@ -14,5 +12,5 @@ export function loadCourses() {
         }).catch(error => {
             throw(error);
         });
-    }
+    };
 }
