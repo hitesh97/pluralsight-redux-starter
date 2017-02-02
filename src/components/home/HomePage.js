@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router';
 
+require('react-progress-bar-plus/lib/progress-bar.css');
+
 class HomePage extends React.Component{
     render() {
         return (
